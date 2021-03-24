@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+form{
+    margin-top: 5vh;
+}
+
+button{
+    margin-top: 50px;
+}
+
+
+#totals{
+    margin-top: 600px;
+    font-size: 2em;
+}
+
+
+
+

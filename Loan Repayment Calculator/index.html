@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="./node_modules/materialize-css/dist/css/materialize.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Loan Calculator</title>
+</head>
+<body>
+  
+<div class="row">    
+    <h1 class="center-align">Loan Repayment Calculator</h1>
+    <p class='center-align'>This calculator will determine how much a loan could potentially cost you</p>
+    <form class="col s12" id="loan-form">
+            
+                <div class="input-field col s4 offset-s4">
+                    <input  id="amount" type="number" class="validate">
+                    <label class='active'>Loan Amount</label>
+                </div>   
+
+       
+            <div class="input-field col s4 offset-s4">
+                <input  id="interest" type="number" class="validate">
+                <label class='active'>Interest Rate(%)</label>
+            </div>
+
+            <div class="input-field col s4 offset-s4">
+                <input id="months" type="number" class="validate">
+                <label class='active'>Term Lenght</label>
+            </div> 
+
+            <div class="row">
+            <button class="waves-effect waves-light btn-large col s4 offset-s4" id='submit'>Calculate</button>
+            </div>
+    </form> 
+    
+<div class="row" id='totals'>
+    <div class="col s12 m2 offset-m3">
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <span class="card-title">Monthly Repayment</span>
+          <p class="scale-transition" id='monthlyPayment'></p>
+        </div>
+      </div>
+    </div>      
+    <div class="col s12 m2">
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <span class="card-title">Total Interest</span>
+          <p class="scale-transition" id='totalInterest'></p>
+        </div>
+      </div>
+    </div>      
+    <div class="col s12 m2" id="finalcard">
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <span class="card-title">Total Amount</span>
+          <p class="scale-transition" id='finalamount'></p>
+        </div>
+      </div>
+    </div>      
+  
+
+</div>       
+    <script src="app.js"></script>
+</body>
+</html>
